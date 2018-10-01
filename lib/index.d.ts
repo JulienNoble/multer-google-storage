@@ -8,6 +8,7 @@ export default class MulterGoogleCloudStorage implements multer.StorageEngine {
     getDestination(req: any, file: any, cb: any): void;
     constructor(opts?: ConfigurationObject & {
         filename?: any;
+        destination?: any;
         bucket?: string;
     });
     _handleFile: (req: any, file: any, cb: any) => void;
